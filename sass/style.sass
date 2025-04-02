@@ -1,0 +1,579 @@
+@import "normalizez.scss" 
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+@font-face
+    font-family: "Montserrat!"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face
+    font-family: "Montserrat!"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "Montserrat!"
+    font-weight: regular
+
+$color-blue:#4A47FF
+$color-orange:#FF7F35
+
+
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    position: relative
+
+.main-section
+    position: relative
+    min-height: 800px
+    background-color: #EDEDED
+    padding-top: 16px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__logo
+        width: 107px
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 120px
+        right: 30px
+        transform: rotate(80deg)
+    &__second-elipse
+        position: absolute
+        top: 650px
+        right: -180px
+        transform: rotate(-65deg)
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        font-weight: bold
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: black
+
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64deg)
+        z-index: 2
+    &__rectangle-orange
+        position: absolute
+        width: 618.43px
+        height: 220px
+        left: -30px
+        top: 160px
+        background: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-50.81deg)
+        z-index: 3
+    &__rectangle-grey
+        position: absolute
+        width: 608.97px
+        height: 220px
+        left: 10px
+        top: 190px
+        background: #E9E9E9
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-36.15deg)
+        z-index: 1
+
+.right-wrapper
+    width: 416px
+    position: absolute
+    top: 150px
+    right: 35px
+    z-index: 1
+    &__title
+        margin-bottom: 3px
+    &__hr
+        width: 407px
+        margin: 0px
+        border: none
+        border-top: 1px solid black
+        margin-bottom: 6px 
+    &__text
+        width: 407px
+        font-size: 16px
+        margin-bottom: 22px
+
+.icons
+    display: inline-flex
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 15px
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 21px
+
+.title
+    font-size: 64px
+    font-weight: bold
+
+.buttons
+    display: inline-flex
+    &__main-btn
+        font-weight: bold
+        margin-right: 30px
+        width: 204px
+        height: 49px
+        border-radius: 100px
+        color: white
+        background-color: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border: none
+        font-size: 18px
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+    &__text
+        font-size: 16px
+
+.elipse
+    width: 222px
+    height: 222px
+    background: linear-gradient(143.92deg,rgba(74,71,255,0.8) 0%,rgba(255,127,53,0.5) 49%,rgba(196,196,196,0.2) 100%)
+    border-radius: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 319px
+        height: 319px
+    &__subtruct
+        width: 147px
+        height: 147px
+        background: #EDEDED
+        border-radius: 100%
+        &_white
+            background-color: #FFFFFF
+        &_big
+            width: 211.23px
+            height: 211.23px
+
+.second-section
+    background-color: #FFFFFF
+    min-height: 700px
+    overflow: hidden
+    &__container
+        padding-top: 30px
+        position: relative
+    &__title
+        margin-bottom: 3px
+    &__hr
+        width: 365px
+        margin: 0px
+        border: none
+        border-top: 1px solid black
+        margin-bottom: 30px 
+    &__cards-box
+        display: flex
+        justify-content: center
+    &__cards-item
+        margin-right: 25px
+        margin-bottom: 60px
+        z-index: 3
+        &:last-child
+            margin-right: 0
+    &__icons-item
+        z-index: 3
+        &:last-child
+            margin-right: 0
+    &__first-elipse
+        position: absolute
+        top: 45px
+        right: -90px
+        transform: rotate(-65deg)
+    &__second-elipse
+        position: absolute
+        top: 300px
+        right: 1010px
+        transform: rotate(-65deg)
+
+.cards-item
+    position: relative
+    width: 331px
+    height: 331px
+    background: #E9E9E9
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 291px
+    &__text
+        width: 280px
+        font-size: 36px
+        text-align: center
+        font-weight: bold
+        transform: rotate(90deg)
+        position: absolute
+        top: 128px
+        right: -60px
+    &_orange
+        background: $color-orange
+    &_blue
+        background: $color-blue
+
+.icons-box
+    display: flex
+    justify-content: space-around
+
+.icons-item
+    display: inline-flex
+    align-items: center
+    &__img
+        width: 80px
+        height: 80px
+        margin-right: 20px
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
+            font-weight: bold
+
+.third-section
+    position: relative
+    min-height: 640px
+    background: #EDEDED
+    overflow: hidden
+    z-index: 0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-left: 160px
+        padding-top: 61px
+    &__right-wrapper
+        max-width: 480px
+    &__right-title
+        margin-bottom: 9px
+    hr
+        border: none
+        border-top: 1px solid black
+        margin: 0
+        margin-bottom: 20px
+    &__right-hr
+        width: 365px
+    &__right-text
+        margin-bottom: 30px
+        font-size: 18px
+    &__left-hr
+        margin: 0
+    &__first-elipse
+        position: absolute
+        top: 70px
+        left: 132px
+        z-index: -2
+        width: 253.84px
+        height: 253.84px
+    &__figure
+        position: absolute
+        top: 180px
+        left: 8px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: -120px
+        right: -120px
+        z-index: -1
+        width: 253.84px
+        height: 253.84px
+
+.elipse__subtruct_third-section
+    width: 168.09px
+    height: 168.09px
+
+.footer
+    hr
+        border: none
+        border-top: 1px solid black
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0
+    &__container
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__wrapper-title
+        margin-bottom: 15px
+    &__wrapper-hr
+        margin: 0
+        margin-bottom: 15px
+
+// Малый пк, или горизонтальный планшет
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .left-wrapper
+        img
+            width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+            top: 150px
+            left: -43px
+        &__rectangle-orange
+            width: 550px
+            height: 200px
+        &__rectangle-grey
+            width: 540px
+            height: 200px
+    .right-wrapper
+        right: -10px
+    .main-section__first-elipse
+        right: -5px
+    .main-section
+        min-height: 690px
+    .main-section__second-elipse
+        top: 530px
+    .cards-item
+        width: 270px
+        height: 270px
+    .cards-item__img
+        height: 240px
+    .cards-item__text
+        top: 100px
+        right: -85px
+        font-size: 30px
+    .second-section__icons-item
+    .second-section
+        min-height: 600px
+    .icons-item__img
+        margin-right: 10px
+    .third-section__container
+        padding-left: 70px
+    .third-section__container
+        min-width: 450px
+
+// Вертикальный планшет
+@media (max-width: 991px)
+    .main-section
+        min-height: 564px
+    .container
+        width: 720px
+    .main-section__logo
+        width: 73.26px
+    .nav-menu__list-item
+        font-size: 16px
+        margin-right: 48px
+    .left-wrapper
+        img
+            width: 593.64px
+        &__rectangle-blue
+            width: 413.53px
+            height: 160.49px
+            top: 100px
+            left: -60px
+        &__rectangle-orange
+            width: 480.5px
+            height: 160.49px
+            top: 100px
+            left: -50px
+        &__rectangle-grey
+            width: 464.07px
+            height: 160.49px
+            top: 125px
+            left: -5px
+    .right-wrapper
+        right: -120px
+        top: 100px
+    .main-section__first-elipse
+        width: 161.34px
+        height: 161.34px
+        right: -15px
+        top: 75px
+        .elipse__subtruct
+            width: 106.83px
+            height: 106.83px
+    .main-section__second-elipse
+        width: 227.43px
+        height: 239.28px
+        top: 450px
+        right: -125px
+        .elipse__subtruct
+            width: 150.6px
+            height: 158.44px
+    .icons__item
+        width: 29.07px
+        height: 29.07px
+        margin-right: 10.9px
+        i
+            font-size: 14.54px
+    .title
+        font-size: 48px
+    .right-wrapper__hr
+        width: 302px
+    .right-wrapper__text
+        width: 305px
+        font-size: 12px
+        margin-bottom: 15.52px
+    .buttons__main-btn
+        width: 148.26px
+        height: 35.61px
+        font-size: 13px
+        margin-right: 21.8px
+    .buttons__icon-btn
+        img
+            width: 42.88px
+            height: 42.88px
+    .buttons__text
+        font-size: 11px
+    // Вторая секция
+    .second-section
+        min-height: 540px
+    .second-section__hr
+        width: 269.97px
+    .cards-item
+        width: 236px
+        height: 236px
+        img
+            width: 151px
+            height: 207.84px
+    .cards-item__text
+        font-size: 24px
+    .icons-item
+        img
+            width: 59.17px
+            height: 59.17px
+        &__text
+            font-size: 15px
+            span
+                font-size: 36px
+    // третья секция
+    .third-section__right-wrapper
+        max-width: 371.13px
+    .third-section__right-text
+        font-size: 14px
+    .third-section 
+        min-height: 465px
+        hr
+            width: 269.31px
+    .container 
+        width: 750px
+    // footer
+    .footer__img
+        width: 500px
+    .footer__container
+        min-height: 190px
+
+
+// Горизонтальный телефон
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .nav-menu
+        position: fixed
+        top: 0px
+        right: -100%
+        width: 50%
+        height: 100vh
+        background: $color-blue
+        z-index: 20
+        transition: 1s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+        &__list-item
+            margin-right: 0px
+            font-size: 20px
+    .hamburger
+        width: 30px
+        position: absolute
+        right: 40px
+        right: 30px
+        height: 14px
+        z-index: 30
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        right: 0
+
+// Вертикальный телефон
+@media (max-width: 575px)
+    .container
+        width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
